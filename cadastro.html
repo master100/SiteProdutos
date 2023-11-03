@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="scripts/funcoes.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="Index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="FaleConosco.html">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="Produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="QuemSomos.html">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="Cadastro.html">Cadastre-se</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form>
+            <h3>Cadastro de visitantes para receber novidades do site</h3>
+            <br>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome">
+            <br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email">
+            <br><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="text" id="telefone" name="telefone" onkeypress="return ValidaNumero(this, event);">
+            <br><br>
+
+            <!-- Baixado do W3Schools -->
+            <input type="radio" id="mecanismoBusca" name="enquete" value="mecanismoBusca">
+            <label for="mecanismoBusca">Mecanismos de Busca Google/Bing</label><br>
+
+            <input type="radio" id="jornais" name="enquete" value="jornais">
+            <label for="jornais">Jornais ou Revistas</label><br>
+
+            <input type="radio" id="mediaSocial" name="enquete" value="mediaSocial">
+            <label for="mediaSocial">Media Social (Instagram/Facebook/TikTok/Linkedin)</label><br>
+
+            <input type="radio" id="outros" name="enquete" value="outros">
+            <label for="outros">Outros</label>
+            <br><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
